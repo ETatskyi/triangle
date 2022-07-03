@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(107, 107, 107);
+    height:           100%;
+    margin:           0;
+}
+
+#container {
+    height:          100%;
+    display:         flex;
+    align-items:     center;
+    justify-content: space-around;
+}
+
+#content {
+    top:              50%;
+    background-color: darkgrey;
+    width:            300px;
+    height:           500px;
+    border-radius:    20px;
+    box-shadow:       3px 10px 15px 8px rgb(0 0 0 / 78%);
+
+    display:         flex;
+    align-items:     center;
+    flex-direction:  column;
+    justify-content: space-around;
+}
+
+.input-container {
+    height: 25%;
+    display:         flex;
+    align-items:     center;
+    flex-direction:  column;
+    justify-content: space-around;
+    text-transform:  uppercase;
+    color:           white;
+}
+
+.input-container input {
+    width: 35px;
+}
+
+.input-container span {
+    margin: 0px 5px;
+}
+
+.input-side {
+    margin: 5px auto;
+}
+
+.input-container button {
+    margin: 5px;
+    border:        1px solid rgb(107, 107, 107);
+    border-radius: 2px;
+    box-shadow:    inset -1px 5px 9px 5px #00000046,
+        0px 5px 3px 0px #3838388f,
+        1px 5px 15px 5px rgb(255, 255, 255);
+}
+
+.input-container button:active {
+    box-shadow:  inset -1px 5px 9px 5px #00000046,  0px 2px 3px 0px #3838388f;
+    transform: translateY(2px);
+}
+
+.input-container button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+canvas{
+    background-color: white;
+    border-radius: 2%;
+}
+
+canvas.error{
+    background-color: red;
+}
