@@ -35,7 +35,6 @@ function error() {
 function check(a, b, c) {
     if (b < 1 || c < 1) return false
     if (a > 100 || c > 100) return false
-    if (isNaN(a) || isNaN(b) || isNaN(c)) return false
     return !(a + b <= c || a + c <= b || b + c <= a)
 }
 
